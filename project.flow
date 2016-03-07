@@ -1,0 +1,33 @@
+{
+	luxe: {
+		window: {
+			width: 200,
+			height: 320,
+			title:'Tetromonic',
+			fullscreen:false,
+			resizable:true,
+			borderless:false
+		}
+	},
+
+	project : {
+		name : 'tetromonic',
+		version : '1.0.0',
+		author : 'Diogo Gomes <dgomes@graphnode.com>',
+
+		app : {
+			name : 'tetromonic',
+			package : 'com.graphnode.tetromonic'
+		},
+
+		build : {
+			dependencies : {
+				luxe : '*',
+			}
+		},
+
+		files : {
+			assets : 'assets/'
+		}
+	}
+}
