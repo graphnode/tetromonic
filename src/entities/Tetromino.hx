@@ -16,12 +16,10 @@ class Tetromino extends Entity
 
     public function new(playfield : Playfield, tiles: Array2d<Int>, color: Int)
 	{
-		trace('tetromino new');
-		
         super({
-            parent: playfield
+            //parent: playfield
         });
-		
+
 		this.playfield = playfield;
         this.tiles = tiles;
         this.color = color;
@@ -30,9 +28,7 @@ class Tetromino extends Entity
 	override function init() 
 	{
 		super.init();
-		
-		trace('tetromino init '  + this.pos);
-		
+
 		this.add(new Controllable());
 		this.add(new Falling());
 		
